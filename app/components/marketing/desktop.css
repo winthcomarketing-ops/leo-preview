@@ -1,0 +1,39 @@
+/* New visuals are hidden below the desktop breakpoint. Existing mobile rules
+   and document order remain intact. */
+.leo-marketing .desktop-only{display:none}
+.leo-marketing .leo-team-desktop-intro{display:contents}
+@media(min-width:1024px){
+ .leo-marketing .wrap{width:calc(100% - 96px);max-width:1180px;margin-left:auto;margin-right:auto}
+ .leo-marketing .leo-welcome{align-items:start;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;padding-top:36px;padding-bottom:36px}
+ .leo-marketing .leo-welcome-stage{align-self:start;order:-1;position:relative;margin-top:0;padding:28px 24px 24px}
+ .leo-marketing .leo-welcome-copy{min-width:0}
+ .leo-marketing .leo-welcome-copy>h1{margin-top:14px;font-size:clamp(48px,4.4vw,66px)}
+ .leo-marketing .leo-welcome-copy>.leo-scan-banner,.leo-marketing .leo-welcome-copy>.leo-scan-banner+.micro{display:none}
+ .leo-marketing .leo-on-call{display:block;text-align:left;margin-top:24px;padding:20px;border-radius:14px;border:1px solid #658449;background:#101d12;color:#eaf5dd}
+ .leo-marketing .leo-on-call strong{display:block;color:var(--lime);font-size:19px;line-height:1.4}
+ .leo-marketing .leo-on-call p{font-weight:700;line-height:1.55;margin:10px 0}
+ .leo-marketing .leo-on-call small{display:block;color:var(--muted);font-size:12px;line-height:1.6}
+ .leo-marketing .leo-desktop-scan-banner{display:block;max-width:760px;text-align:center;margin-top:12px;margin-bottom:26px}
+ .leo-marketing .leo-desktop-scan-banner .micro{display:block;text-align:center;margin:12px 0}
+ .leo-marketing .leo-scan-first .scan-start{max-width:760px;margin-left:auto;margin-right:auto}
+ .leo-marketing .leo-scan-secondary{justify-content:center;gap:24px;flex-wrap:wrap;margin-top:24px}
+ .leo-marketing .leo-demo{padding-top:72px;padding-bottom:36px}
+ .leo-marketing .leo-demo-intro{position:relative;text-align:center;margin:0 auto 32px;max-width:100%;padding:10px 220px;min-height:250px}
+ .leo-marketing .leo-demo-intro>p{max-width:640px;margin-left:auto;margin-right:auto}
+ .leo-marketing .leo-demo-intro h2{font-size:clamp(34px,3vw,46px);line-height:1.16}
+ .leo-marketing .leo-demo-floating{display:block;position:absolute;right:0;top:-20px;width:200px;height:280px;object-fit:contain;filter:drop-shadow(0 18px 30px #0005);animation:leo-desktop-float 6s ease-in-out infinite}
+ .leo-marketing .leo-demo-shell{width:100%;margin-left:auto;margin-right:auto}
+ .leo-marketing .leo-demo-close{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap;padding:26px;border:1px solid #405337;border-radius:16px;margin-top:24px;background:#142016}
+ .leo-marketing .leo-demo-close>span{flex-basis:100%;text-align:center;font-size:22px;font-weight:700}
+ .leo-marketing .audience{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;padding:32px;border:1px solid #405337;border-radius:16px;background:#111c13;margin-top:14px;margin-bottom:72px}
+ .leo-marketing .audience>p{margin:0;max-width:720px}
+ .leo-marketing .segments{display:flex;justify-content:center;gap:12px}
+ .leo-marketing #team .leo-team-desktop-intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:center;gap:56px;margin-bottom:40px}
+ .leo-marketing #team .sectionintro{max-width:none;text-align:left;margin:0}
+ .leo-marketing #team .sectionintro p{max-width:650px}
+ .leo-marketing .leo-team-visual{display:block;margin:0;min-width:0;border:1px solid #47623c;border-radius:20px;overflow:hidden;background:#142016}
+ .leo-marketing .leo-team-visual img{display:block;width:100%;height:auto;aspect-ratio:1945/809;object-fit:contain}
+ .leo-marketing .leo-team-visual figcaption{padding:12px 16px;font-size:11px;line-height:1.5;color:var(--muted)}
+ @keyframes leo-desktop-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+}
+@media(min-width:1024px) and (prefers-reduced-motion:reduce){.leo-marketing .leo-demo-floating{animation:none}}
