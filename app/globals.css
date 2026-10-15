@@ -7839,6 +7839,88 @@ input,select {
 #early-access.conversion {
   padding-bottom: 28px;
 }
+.connect-checklist ol {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 8px;
+}
+.connect-checklist li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+}
+.connect-checklist li div {
+  flex: 1;
+  min-width: 0;
+}
+.connect-checklist li small {
+  display: block;
+  opacity: .75;
+}
+.connect-checklist .check {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+}
+.connect-checklist li.done .check {
+  background: var(--lime);
+  color: var(--dark);
+  border-color: var(--lime);
+}
+.connect-checklist .state {
+  font-size: 13px;
+  opacity: .8;
+}
+.checklist-progress {
+  height: 10px;
+  border-radius: 99px;
+  background: rgba(127,127,127,.25);
+  overflow: hidden;
+  margin-top: 10px;
+}
+.checklist-progress span {
+  display: block;
+  height: 100%;
+  background: var(--lime);
+  transition: width .3s;
+}
+.workspace-feedback {
+  font-weight: 700;
+}
+.nav-signin,.button.nav-beta {
+  white-space: nowrap;
+}
+.setup-shell table {
+  display: block;
+  max-width: 100%%;
+  overflow-x: auto;
+}
+@media (max-width:520px) {
+  .nav-auth {
+    gap: 10px;
+  }
+  .button.nav-beta {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  .nav-auth .nav-signin {
+    font-size: 14px;
+  }
+  header img[width="190"] {
+    width: 130px;
+    height: auto;
+  }
+  .connect-checklist .state {
+    display: none;
+  }
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
