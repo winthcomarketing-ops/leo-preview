@@ -1,0 +1,148 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Local Agent Leo — Local SEO for CPAs &amp; Financial Advisors (Mockup)</title>
+<link rel="icon" href="assets/leo-logo.png">
+<style>
+:root{--bg:#0b0f0d;--panel:#141b16;--line:#29332b;--ink:#f4f8ef;--muted:#b7c2b7;--lime:#ceff70;--dark:#17230d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 19px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--lime)}img{max-width:100%;display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}h1,h2,h3{line-height:1.15;margin:0 0 16px;letter-spacing:-.02em}
+h1{font-size:clamp(40px,5.4vw,68px)}h2{font-size:clamp(32px,3.6vw,48px)}h3{font-size:26px}
+.eyebrow{color:var(--lime);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:16px;margin-bottom:12px}
+.lead{font-size:22px;color:var(--muted);max-width:640px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:60px;padding:0 30px;border-radius:14px;font-weight:700;font-size:20px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn-lime{background:var(--lime);color:var(--dark)}.btn-lime:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(206,255,112,.3)}
+.btn-ghost{border-color:var(--line);color:var(--ink)}.btn-ghost:hover{border-color:var(--lime)}
+nav{position:sticky;top:0;z-index:50;background:rgba(11,15,13,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:28px;height:84px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--ink);text-decoration:none}.logo img{width:48px;height:48px;border-radius:12px}
+.links{display:flex;gap:28px;margin-left:auto}.links a{color:var(--ink);text-decoration:none;font-size:19px}.links a:hover{color:var(--lime)}
+nav .btn{min-height:52px;font-size:18px;padding:0 22px}
+.hero{padding:72px 0 88px;overflow:hidden}.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1 span{color:var(--lime)}
+.scan{display:flex;gap:12px;margin:32px 0 16px;background:var(--panel);border:2px solid var(--line);border-radius:18px;padding:10px}
+.scan input{flex:1;min-width:0;background:transparent;border:0;color:var(--ink);font-size:21px;padding:0 14px;outline:none}
+.scan:focus-within{border-color:var(--lime)}
+.trust{color:var(--muted);font-size:18px}.trust b{color:var(--ink)}
+.signin{margin-top:18px;display:inline-flex;gap:10px;align-items:center;color:var(--ink);font-size:18px}
+.hero-art{position:relative}.hero-art:before{content:"";position:absolute;inset:8% 6%;background:radial-gradient(circle,rgba(206,255,112,.35),transparent 65%);filter:blur(30px);animation:pulse 5s ease-in-out infinite}
+.hero-art img{position:relative;animation:float 6s ease-in-out infinite;border-radius:24px}
+@keyframes float{50%{transform:translateY(-14px)}}@keyframes pulse{50%{opacity:.6}}
+.strip{border-block:1px solid var(--line);background:var(--panel);padding:28px 0}
+.strip .wrap{display:flex;justify-content:space-around;gap:24px;flex-wrap:wrap}.strip div{font-size:21px;font-weight:700}.strip div:before{content:"✓";color:var(--lime);margin-right:10px}
+.center{text-align:center}.center .lead{margin:0 auto 48px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:32px}
+.step img{border-radius:16px;aspect-ratio:4/3;object-fit:cover;margin-bottom:24px;width:100%}
+.num{display:inline-grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--lime);color:var(--dark);font-weight:800;font-size:26px;margin-bottom:16px}
+.card p{color:var(--muted);margin:0}
+.tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.tile{text-align:center;padding:28px 18px}.tile .ic{font-size:40px;margin-bottom:12px}.tile h3{font-size:21px}.tile p{font-size:17px}
+.results .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.badge{display:inline-block;background:#2a2410;color:#ffd77a;border:1px solid #6b5a22;border-radius:999px;padding:4px 14px;font-size:16px;font-weight:700}
+.score{display:flex;align-items:center;gap:24px;margin:20px 0 24px}
+.ring{width:130px;height:130px;border-radius:50%;background:conic-gradient(var(--lime) 0 62%,var(--line) 0);display:grid;place-items:center}
+.ring span{width:104px;height:104px;border-radius:50%;background:var(--panel);display:grid;place-items:center;font-size:40px;font-weight:800}
+ol.next{margin:0;padding:0;list-style:none;counter-reset:n}ol.next li{counter-increment:n;display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+ol.next li:before{content:counter(n);flex:none;width:34px;height:34px;border-radius:50%;border:2px solid var(--lime);color:var(--lime);display:grid;place-items:center;font-weight:800;font-size:17px}
+.aud{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.chips span{background:#1c2a1a;border:1px solid #3a4f2e;color:var(--lime);border-radius:999px;padding:8px 16px;font-size:17px}
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
+.price{display:flex;flex-direction:column}.price .amt{font-size:52px;font-weight:800;margin:8px 0}.price .amt small{font-size:20px;color:var(--muted);font-weight:400}
+.price ul{padding:0;list-style:none;margin:16px 0 28px;flex:1}.price li{padding:8px 0}.price li:before{content:"✓ ";color:var(--lime);font-weight:800}
+.price.hot{border:2px solid var(--lime);box-shadow:0 0 60px rgba(206,255,112,.15);position:relative}
+.price.hot .tag{position:absolute;top:-16px;left:32px;background:var(--lime);color:var(--dark);font-weight:800;border-radius:999px;padding:4px 16px;font-size:16px}
+.chat .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.bubbles{display:flex;flex-direction:column;gap:16px}
+.b{max-width:85%;padding:18px 22px;border-radius:20px;font-size:19px}.b.you{align-self:flex-end;background:#26301f;border-bottom-right-radius:6px}
+.b.leo{background:var(--panel);border:1px solid var(--line);border-bottom-left-radius:6px;display:flex;gap:12px}.b.leo img{width:40px;height:40px;border-radius:10px;flex:none}
+.ask{display:flex;gap:10px;margin-top:8px}.ask input{flex:1;min-height:60px;border-radius:14px;border:2px solid var(--line);background:var(--panel);color:var(--ink);font-size:19px;padding:0 18px}
+details{border-bottom:1px solid var(--line);padding:6px 0}summary{cursor:pointer;font-size:22px;font-weight:700;padding:18px 0;list-style:none;display:flex;justify-content:space-between}
+summary:after{content:"+";color:var(--lime);font-size:30px;line-height:1}details[open] summary:after{content:"–"}details p{color:var(--muted);margin:0 0 20px}
+.faq{max-width:860px;margin:0 auto}
+.final{background:linear-gradient(135deg,#1c2a12,#0f150d);border:1px solid #3a4f2e;border-radius:32px;display:grid;grid-template-columns:1.3fr .7fr;gap:32px;align-items:center;padding:56px}
+footer{border-top:1px solid var(--line);padding:48px 0;color:var(--muted);font-size:17px}footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}footer a{color:var(--muted);margin-right:20px}
+.note{font-size:16px;color:var(--muted);margin-top:16px}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media (max-width:1000px){.links{display:none}.hero .wrap,.results .wrap,.chat .wrap,.final{grid-template-columns:1fr}.steps,.prices,.aud{grid-template-columns:1fr}.tiles{grid-template-columns:1fr 1fr}.hero-art{max-width:460px;margin:0 auto}}
+@media (max-width:560px){section{padding:64px 0}nav .login{display:none}nav .btn{font-size:16px;padding:0 14px;min-height:48px}.logo span{display:none}.scan{flex-direction:column}.scan input{min-height:56px}.tiles{grid-template-columns:1fr}.final{padding:32px 24px}.strip .wrap{flex-direction:column;align-items:flex-start}}
+</style></head><body>
+<nav><div class="wrap"><a class="logo" href="#"><img src="assets/leo-logo.png" alt="Leo the robot"><span>Local Agent Leo</span></a>
+<div class="links"><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#help">Help</a><a class="login" href="#">Log in</a></div>
+<a class="btn btn-lime" href="#pricing">Create my free account</a></div></nav>
+
+<header class="hero"><div class="wrap"><div>
+<div class="eyebrow">Local SEO for CPAs &amp; financial advisors</div>
+<h1>Get found by local clients. <span>Leo does the SEO work for you.</span></h1>
+<p class="lead">Leo is your AI marketing teammate. He finds what's holding your firm back in local search, prepares the fixes, and waits for your OK. You focus on your clients.</p>
+<form class="scan" onsubmit="event.preventDefault();alert('Mockup only — the free scan would start here.')"><label for="site" style="position:absolute;left:-9999px">Your website</label>
+<input id="site" type="text" placeholder="yourfirm.com" autocomplete="url"><button class="btn btn-lime" type="submit">Scan my site free</button></form>
+<div class="trust"><b>Free.</b> Takes about 2 minutes. No credit card. Nothing goes live without your approval.</div>
+<a class="signin btn btn-ghost" href="#" style="margin-top:20px">Sign in with ChatGPT</a>
+</div><div class="hero-art"><img src="assets/leo-floating-desktop.png" alt="Leo, the friendly AI marketing robot"></div></div></header>
+
+<div class="strip"><div class="wrap"><div>Built for CPAs and financial advisors</div><div>No tech skills needed</div><div>Nothing goes live without your OK</div></div></div>
+
+<section id="how"><div class="wrap center"><div class="eyebrow">How Leo works</div><h2>Three simple steps. Leo does the heavy lifting.</h2><p class="lead">No logins to juggle and no jargon. Just clear next steps in plain English.</p>
+<div class="steps" style="text-align:left">
+<div class="card step reveal"><img src="assets/leo-at-work.webp" alt="Leo scanning a website"><div class="num">1</div><h3>Scan</h3><p>Type in your website. Leo checks how easily nearby clients can find your firm on Google and AI search.</p></div>
+<div class="card step reveal"><img src="assets/leo-clients-desktop.webp" alt="Leo planning with client data"><div class="num">2</div><h3>Plan</h3><p>Leo turns the results into a short, ranked to‑do list, starting with the changes that matter most.</p></div>
+<div class="card step reveal"><img src="assets/leo-floating-desktop.png" alt="Leo preparing drafts" style="object-fit:contain;background:#0f1510"><div class="num">3</div><h3>Leo drafts, you approve</h3><p>Leo prepares profile updates, pages, and posts. You read them, click approve, and Leo takes it from there.</p></div>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap center"><div class="eyebrow">What Leo connects</div><h2>Works with the tools you already have</h2><p class="lead">Connect once with a few clicks. Leo can't publish anything until you say yes.</p>
+<div class="tiles">
+<div class="card tile reveal"><div class="ic">📍</div><h3>Google Business Profile</h3><p>Hours, services, posts and reviews</p></div>
+<div class="card tile reveal"><div class="ic">🔎</div><h3>Search Console</h3><p>See what people search to find you</p></div>
+<div class="card tile reveal"><div class="ic">🌐</div><h3>Your website / FMG Suite</h3><p>Page updates and local pages</p></div>
+<div class="card tile reveal"><div class="ic">📅</div><h3>Calendly</h3><p>Turn visitors into booked meetings</p></div>
+<div class="card tile reveal"><div class="ic">✉️</div><h3>Report email</h3><p>A plain-English progress report</p></div>
+</div></div></section>
+
+<section class="results" style="background:var(--panel);border-block:1px solid var(--line)"><div class="wrap">
+<div><div class="eyebrow">See what you'll get</div><h2>A clear score and your next 5 steps</h2><p class="lead">Every scan ends with one simple number and a short list. No 40-page reports.</p><a class="btn btn-lime" href="#" style="margin-top:20px">Scan my site free</a></div>
+<div class="card reveal" style="background:var(--bg)"><span class="badge">EXAMPLE DATA — sample report</span>
+<div class="score"><div class="ring"><span>62</span></div><div><h3 style="margin:0">Local visibility score</h3><p>Example: "Maple Street Tax &amp; Wealth", Springfield</p></div></div>
+<ol class="next"><li>Add your office hours and services to your Google Business Profile</li><li>Ask 5 recent clients for a Google review</li><li>Create a page for "tax preparation in Springfield"</li><li>Make your firm name and address match everywhere online</li><li>Add a "Book a meeting" button using Calendly</li></ol></div>
+</div></section>
+
+<section><div class="wrap"><div class="center"><div class="eyebrow">Made for your practice</div><h2>Leo speaks your clients' language</h2><p class="lead">Leo targets the searches real people in your town type every day.</p></div>
+<div class="aud">
+<div class="card reveal"><h3>For CPAs</h3><p>Show up when neighbors need tax help, especially during busy season, with service pages and a Google profile that work year-round.</p><div class="chips"><span>CPA near me</span><span>tax preparer in [your city]</span><span>small business accountant</span><span>bookkeeping services nearby</span><span>IRS letter help</span></div></div>
+<div class="card reveal"><h3>For financial advisors</h3><p>Be the trusted local name when people search for retirement and planning help, with compliant drafts you review first.</p><div class="chips"><span>financial advisor near me</span><span>retirement planner [your city]</span><span>fee-only advisor</span><span>401(k) rollover help</span><span>wealth management nearby</span></div></div>
+</div></div></section>
+
+<section id="pricing" style="background:var(--panel);border-block:1px solid var(--line)"><div class="wrap center"><div class="eyebrow">Pricing</div><h2>Start free. Upgrade when you're ready.</h2><p class="lead">Simple monthly plans. Cancel anytime.</p>
+<div class="prices" style="text-align:left">
+<div class="card price reveal" style="background:var(--bg)"><h3>Free beta</h3><div class="amt">$0</div><p>Try Leo while we're in beta.</p><ul><li>Free website scan</li><li>Local visibility score</li><li>Your top 5 next steps</li></ul><a class="btn btn-ghost" href="#">Create my free account</a></div>
+<div class="card price reveal" style="background:var(--bg)"><h3>Starter</h3><div class="amt">$399<small>/mo</small></div><p>Guided help, step by step.</p><ul><li>Everything in Free beta</li><li>Monthly plan and drafts</li><li>Guided setup for Google tools</li><li>Monthly report email</li></ul><a class="btn btn-ghost" href="#">Choose Starter</a></div>
+<div class="card price hot reveal" style="background:var(--bg)"><span class="tag">Most popular</span><h3>Practice Plus</h3><div class="amt">$499<small>/mo</small></div><p>Leo does more of the work for you.</p><ul><li>Everything in Starter</li><li>Leo's agent-assisted cloud browser connects your tools</li><li>Optimizes FMG Suite websites</li><li>Ongoing drafts, ready for your OK</li></ul><a class="btn btn-lime" href="#">Choose Practice Plus</a></div>
+</div></div></section>
+
+<section id="help" class="chat"><div class="wrap">
+<div><div class="eyebrow">Ask Leo</div><h2>Questions? Leo answers, 24/7.</h2><p class="lead">Real answers in plain English, any time of day. No hold music, no waiting for a call back.</p></div>
+<div class="bubbles reveal">
+<div class="b you">Do I need to know anything about SEO?</div>
+<div class="b leo"><img src="assets/leo-logo.png" alt=""><div>Not at all. I handle the technical parts and explain everything simply. You just review and approve.</div></div>
+<div class="b you">Will you post anything without asking me?</div>
+<div class="b leo"><img src="assets/leo-logo.png" alt=""><div>Never. Every change waits for your OK first. Your firm stays in control.</div></div>
+<form class="ask" onsubmit="event.preventDefault()"><input aria-label="Ask Leo a question" placeholder="Ask Leo a question…"><button class="btn btn-lime">Ask</button></form>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap"><div class="center"><div class="eyebrow">FAQ</div><h2>Common questions</h2></div><div class="faq">
+<details open><summary>What is Local Agent Leo?</summary><p>Leo is an AI toolkit that helps CPAs and financial advisors get found by local clients on Google and AI search. He finds opportunities, prepares the work, and tracks results.</p></details>
+<details><summary>Is the scan really free?</summary><p>Yes. The scan and your top 5 next steps are free during our beta. No credit card needed.</p></details>
+<details><summary>Does anything go live without me?</summary><p>No. Leo drafts every change and waits for your approval before anything is published.</p></details>
+<details><summary>Does Leo work with FMG Suite websites?</summary><p>Yes. With Practice Plus, Leo's agent-assisted cloud browser can connect your tools and optimize FMG Suite sites, with your approval.</p></details>
+<details><summary>How do I sign in?</summary><p>Create a free account, or simply sign in with ChatGPT.</p></details>
+<details><summary>Are new clients or rankings guaranteed?</summary><p>No one can honestly guarantee rankings. Leo focuses on the proven local steps and shows you the evidence of progress.</p></details>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap"><div class="final reveal"><div><h2>Ready to be the firm locals find first?</h2><p class="lead">Start with a free scan. Leo will show you exactly what to do next.</p><a class="btn btn-lime" href="#" style="margin-top:16px">Scan my site free</a></div><img src="assets/leo-at-work.webp" alt="Leo at work" style="border-radius:20px"></div></div></section>
+
+<footer><div class="wrap"><div><a class="logo" href="#"><img src="assets/leo-logo.png" alt="">Local Agent Leo</a><p>Local SEO for CPAs &amp; financial advisors.<br>© 2026 Local Agent Leo. Design mockup — example content only.</p></div>
+<div><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#help">Help</a><a href="#">Privacy</a><a href="#">Terms</a></div></div></footer>
+<script>const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));</script>
+</body></html>
